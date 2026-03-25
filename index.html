@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Google Copy  By Pawan</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+<div class="clock-box">
+    <div id="clock" style="position: top;">00:00:00</div>
+    <div id="date"></div>
+</div>
+
+<!-- Dark Mode Toggle -->
+<button id="toggleMode">🌙</button>
+ <div class="navbar"> <a href="#">Gmail</a>
+         <a href="#">Images</a> 
+         <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" class="profile"> </div> 
+         
+         <!-- Main Section -->
+    
+
+<div class="main">
+    <img src="https://ik.imagekit.io/pawan979843/New%20Folder/Pawan%20in%20vibrant%20colors.png?updatedAt=1774420783661" class="logo">
+
+    <form action="https://www.google.com/search" method="GET">
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" name="q" placeholder="Search Google..." autocomplete="off">
+
+            <!-- Suggestions -->
+            <ul id="suggestions"></ul>
+
+            <!-- Image Preview -->
+            <img id="preview" class="preview">
+
+            <!-- Camera -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Google_Lens_Icon.svg" class="lens-img" onclick="openFile()">
+
+            <input type="file" id="fileInput" hidden>
+
+            <!-- Mic -->
+            <i class="fa-solid fa-microphone mic" onclick="startVoice()"></i>
+              <i class="fa fa-search"></i>
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Search</button>
+        </div>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
